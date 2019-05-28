@@ -1,0 +1,1 @@
+docker run --rm -v D:/Develop/www:/srv/jekyll -it jekyll/jekyll:3.8 jekyll build

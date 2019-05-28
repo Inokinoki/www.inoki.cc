@@ -1,0 +1,33 @@
+# Basic site info
+title:              "Welcome to Inoki's home page"
+description:        "Student in the University of Technology of Compiegne"
+
+# Site URL settings
+url:                https://inokinoki.github.io # main url
+baseurl:            /resume # for gh-pages
+
+# Google Analytics ID
+google_analytics_code: 
+
+# Build settings
+source:             ./
+destination:        ./_site
+markdown:           kramdown
+highlighter:        rouge
+timezone:           Europe/Paris
+exclude:            ["README.md", "LICENSE.md", "CHANGELOG.md", "serve.sh"]
+
+# Site configurations
+compress_html:
+  clippings:        all
+  comments:         ["<!-- ", " -->"]
+  endings:          all
+  ignore:
+    envs:           [local]
+  blanklines:       false
+  profile:          false
+  startings:        [html, head, body]
+
+sass:
+  sass_dir:         assets/scss
+  style:            compressed # expanded
